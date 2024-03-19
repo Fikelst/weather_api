@@ -2,15 +2,22 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Dodajemy Flexbox do kontenera */
+    flex-direction: column; /* Ustawiamy kierunek flexa na kolumnowy */
+    justify-content: center; /* Wyśrodkowanie w pionie */
+    align-items: center; /* Wyśrodkowanie w poziomie */
 }
 
 h1 {
@@ -49,10 +56,12 @@ button:hover {
 .weather-info {
     margin-top: 20px;
     text-align: left;
+    display: flex; /* Dodajemy Flexbox do elementu z informacjami pogodowymi */
+    flex-direction: column; /* Ustawiamy kierunek flexa na kolumnowy */
+    align-items: center; /* Wyśrodkowanie w poziomie */
 }
-
 .weather-icon {
-    width: 100px;
+    width: 150px; /* Zwiększenie rozmiaru ikony */
     height: auto;
-    margin-top: 20px;
+    margin-top: 2px;
 }
